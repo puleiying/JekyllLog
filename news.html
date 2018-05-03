@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+<h1>动态新闻</h1>
+
+{% for post in site.posts %}
+
+<ul>
+  <li>
+    <a href="{{site.baseyrl}}{{ post.url }}">{{ post.title }}</a>
+   <p> {{post.meta}} </p>
+  </li>
+</ul>
+
+{% endfor %}
+
